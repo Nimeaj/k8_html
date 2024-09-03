@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       //결과비교출력
       if(comN === userN) {
         msg.textContent = '맞음';
-      } else {
+      } else {0
         msg.textContent = '틀림';
       }
 
