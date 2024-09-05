@@ -4,6 +4,7 @@
   padding: 10px;
   border-radius: 5px;
   height: 45px;
+  border-style: dotted;
 
   display: flex;
   justify-content: center;
@@ -19,6 +20,7 @@
   padding: 10px;
   border-radius: 5px;
   height: 45px;
+  border-style: dashed;
 
   display: flex;
   justify-content: center;
