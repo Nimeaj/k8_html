@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(10, 41, 136);
+  background-color: darkslateblue;
   color: white;
 }
 
@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   color: whitesmoke;
-  background-color: gray;
+  background-color: darkslateblue;
 }
 
 header, main{
@@ -37,7 +37,7 @@ ul {
 }
 
 .menuLi:hover {
-  background-color: rgb(6, 6, 245); 
+  background-color: darkblue; 
 }
 
 a {
