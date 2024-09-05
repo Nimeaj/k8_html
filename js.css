@@ -13,7 +13,7 @@ header , main {
 
 header{
   height: 80px;
-  background-color: lightslategray;
+  background-color: darkslateblue;
   color: white;
 
   justify-content: space-between;
