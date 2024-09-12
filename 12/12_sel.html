@@ -14,7 +14,7 @@
     alert("안녕하세요.");
   </script> -->
   <!-- 외부 스크립트 -->
-  <script src="./12.js"></script>
+  <script src="./12_sel.js"></script>
 </head>
 
 <body>
@@ -30,14 +30,11 @@
       <section class='sec'>
           <div class="divDt">
             <input type="date" id="dt" name="dt">
-            <fieldset>
-            <input type='radio' id="r1" name='mvgb' value='K'>
-            <label for="r1">한국</label>
-            <input type='radio' id="r2" name='mvgb' value='F'>
-            <label for="r2">외국</label>
-            <input type='radio' id="r3" name='mvgb' value='T' checked>
-            <label for="r3">전체</label>
-          </fieldset>
+            <select id="sel1" name="sel1">
+              <option value="K">한국</option>
+              <option value="F">외국</option>
+              <option value="T">전체</option>
+            </select>
           </div>
       </section>
       <section class="sec">
@@ -46,9 +43,6 @@
         </ul>
       </section>
     </main>
-    <footer id="mvfooter">
-      <div id="mvinfo"></div>
-    </footer>
   </form>
 </body>
 

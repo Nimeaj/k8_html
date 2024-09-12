@@ -1,11 +1,25 @@
-#boxofficemain {
+#boxofficemain, #mvfooter {
   display: flex;
-
   flex-direction: column;
   justify-content: start;
   align-items: center; 
+}
 
+#boxofficemain {
   height: 600px;
+}
+
+#mvfooter{
+  height: 200px;
+  width: 80%;
+  color: white;
+  background-color: darkslateblue;
+  margin: 0 auto;
+
+}
+
+ul{
+  width: 50%;
 }
 
 .sec, .divDt {
@@ -29,9 +43,25 @@
   border: 1px dotted gray;
 }
 
-input[type=date] {
+input[type=date], select {
   width: 40%;
   height: 30px;
+  margin-left: 5%;
+}
+
+fieldset{
+  width: 18%;
+  height: 30px;
+  margin-left: 5%;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label{
+  margin-right: 5px;
+  margin-left: 2px;
 }
 
 .mvli{
@@ -50,6 +80,37 @@ input[type=date] {
 
   margin: 0px, 2px;
 }
+
+.mvif {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: small;
+  color: white;
+  font-weight: bold;
+
+
+  margin: 0px, 2px;
+}
+
+.mvifName {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: large;
+  color: white;
+  font-weight: bold;
+
+
+  margin: 0px, 2px;
+}
+
 
 .mvli:hover {
   background-color: darkorange;
@@ -75,4 +136,30 @@ span{
 .rank:hover {
   font-weight: bold;
   border: 3px double whitesmoke;
+}
+
+.movieNm {
+  width: 60%;
+}
+
+.openDt {
+  width: 30%;
+}
+
+.rankInten {
+  width: 30%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.spRed{
+  color: red;
+}
+
+.spBlue{
+  color: blue;
 }
