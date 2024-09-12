@@ -13,20 +13,17 @@ const getDetail = (movieCd) => {
   .then(resp=>resp.json())
   .then(data=>{
     let movieInfo = data.movieInfoResult.movieInfo;
-    console.log(data.movieInfoResult.movieInfo);
+    console.log(movieInfo);
 
-    let movieNm = data.movieInfoResult.movieInfo.movieNm;
-    let genres = data.movieInfoResult.movieInfo.genres;
-    let genreNm = genres.map(genre => genre.genreNm).join(", ");
-
-    let actors = data.movieInfoResult.movieInfo.actors;
-    let cast = actors.filter(actor => actor.cast).map(actors => actors.cast).join(", ");
+    let movieNm = movieInfo.movieNm;
+    let genreNm = movieInfo.genres.map(genre => genre.genreNm).join(", ");
+    let actors = movieInfo.actors.slice(0,3).map(item => item.peopleNm).join(', ') ;
 
 
     footer.innerHTML = `
     <span class="mvifName">제목: ${movieNm}</span>
     <span class="mvif">장르: ${genreNm}</span>
-    <span class="mvif">출연진: ${cast}</span>`;
+    <span class="mvif">출연진: ${actors}</span>`;
     // tm = tm.join('')
     // console.log(tm)
   })
